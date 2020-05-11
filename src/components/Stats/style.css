@@ -1,0 +1,17 @@
+.behindProfile {
+  flex-grow: 1;
+}
+
+.centerStats {
+  flex-grow: 1;
+}
+
+.stat {
+  font-size: x-small;
+  width: '100%';
+  height: '5px';
+}
+
+.settings {
+  flex-grow: 1;
+}
