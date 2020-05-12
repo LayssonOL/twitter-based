@@ -1,0 +1,30 @@
+.profileInfo {
+  width: 100%;
+}
+
+.cardHeader {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ justify-items: flex-start;
+ justify-self: flex-start;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: left;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+.profileTitle {
+  text-align: justify;
+  text-orientation: initial;
+}
+
+.profileCard {
+  position: relative;
+  width: 100%;
+}

@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  height: 100%;
+  position: absolute;
 }
 
 .App-logo {
@@ -13,14 +15,21 @@
   }
 }
 
+.coverPicture {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .header {
-  background-color: chartreuse;
   width: '100%';
-  height: 120px;
+  height: 135px;
 }
 
 .stats {
-  width: '100%';
+  width: '100vh';
 }
 
 .columnOne {
@@ -48,6 +57,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.profilePicture {
+  position: absolute;
+  top: 30px;
+  background-color: black;
 }
 
 .App-link {

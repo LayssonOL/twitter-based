@@ -1,17 +1,41 @@
 .behindProfile {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .centerStats {
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .stat {
   font-size: x-small;
   width: '100%';
   height: '5px';
+  font-size: '12pt';
 }
 
-.settings {
-  flex-grow: 1;
+.followText {
+  padding-bottom: 5px;
+  font-weight: bold;
+  background-color: black;
+}
+
+.settingIcon {
+  position: relative;
+  left: 65px;
+  font-size: 25;
+}
+
+.moreText {
+  position: relative;
+  top: 8px;
+  font-size: '10pt';
+  width: '100%';
+  height: '5px';
+  font-weight: bold;
+}
+
+.arrowDown {
+  position: relative;
+  top: 10px;
+  color: grey;
 }
