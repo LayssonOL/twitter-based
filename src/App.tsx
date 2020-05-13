@@ -1,8 +1,9 @@
 import React from 'react';
-import { Grid, Typography, CardMedia, Card, CardContent } from '@material-ui/core';
+import { Grid, Typography, Paper } from '@material-ui/core';
 import Stats from './components/Stats';
-import CoverPicture from './imgs/cover_picture.png';
-import ProfilePicture from './imgs/profile_picture.png';
+import DefaultCoverPicture from './imgs/default_cover_picture.png';
+// import CoverPicture from './imgs/cover_picture.png';
+import ProfilePicture from './imgs/twitter_icon.jpg';
 import ProfileColumn from './components/Profile';
 import './App.css';
 
@@ -11,16 +12,10 @@ function App() {
     <div className="App">
       <Grid container>
         <Grid item xs={12} sm={12} lg={12} className="header" justify="center">
-          <img alt="Cover" className="coverPicture" src={CoverPicture}/>
-          <Card>
-            <CardContent>
-              <CardMedia
-                className='profilePicture'
-                image={ProfilePicture}
-                title="Profile"
-              />
-            </CardContent>
-          </Card>
+          <img alt="Cover" className="coverPicture" src={DefaultCoverPicture} />
+          <Paper className='profilePaper'>
+            <img alt='Profile' className='profilePicture' src={ProfilePicture} />
+          </Paper>
         </Grid>
         <Grid
           item

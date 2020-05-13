@@ -3,6 +3,8 @@ import { Grid, Typography, Card, CardContent, CardActions, TextField, CardHeader
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined'
 import LinkOutlinedIcon from '@material-ui/icons/LinkOutlined'
 import WatchLaterOutlinedIcon from '@material-ui/icons/WatchLaterOutlined'
+import OfficialAccountPicture from '../../imgs/official_account_icon.jpeg'
+import Followers from '../Followers'
 import './style.css'
 
 const ProfileColumn: React.FC = () => {
@@ -12,9 +14,14 @@ const ProfileColumn: React.FC = () => {
         <Card className="profileCard">
           <CardHeader
             title={
-              <Typography variant="h5" style={{ fontWeight: 'bold' }}>
-                Twitter
-              </Typography>
+              <>
+                <Grid container direction="row" alignItems="center">
+                  <Typography variant="h5" style={{ fontWeight: 'bold' }}>
+                    Twitter
+                  </Typography>
+                  <img alt="OfficialIcon" className="officialAccPicture" src={OfficialAccountPicture} />
+                </Grid>
+              </>
             }
             subheader={<Typography variant="body2">@Twitter</Typography>}
             className="cardHeader"
@@ -43,12 +50,12 @@ const ProfileColumn: React.FC = () => {
             </Grid>
           </CardContent>
           <CardActions>
-            <TextField label='Tweet to Twitter' variant='outlined'/>
+            <TextField fullWidth className="inputTweet" label="Tweet to Twitter" variant="outlined" />
           </CardActions>
         </Card>
       </Grid>
-      <Grid item className="followers">
-        <Typography variant="h3">Followers</Typography>
+      <Grid item container direction="row" justify="center" className="followers">
+        <Followers />
       </Grid>
     </>
   )
