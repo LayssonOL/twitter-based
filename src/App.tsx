@@ -13,7 +13,7 @@ function App() {
       <Grid container>
         <Grid item xs={12} sm={12} lg={12} className="header" justify="center">
           <img alt="Cover" className="coverPicture" src={DefaultCoverPicture} />
-          <Paper className='profilePaper'>
+          <Paper elevation={0} className='profilePaper'>
             <img alt='Profile' className='profilePicture' src={ProfilePicture} />
           </Paper>
         </Grid>

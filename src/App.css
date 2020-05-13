@@ -73,6 +73,7 @@
   justify-content: center;
   width: 220px;
   height: 190px;
+  box-shadow: none;
   border: 2px;
   border-radius: 20%;
   background-color: white;

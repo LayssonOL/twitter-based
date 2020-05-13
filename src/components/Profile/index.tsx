@@ -11,7 +11,7 @@ const ProfileColumn: React.FC = () => {
   return (
     <>
       <Grid item container className="profilInfo">
-        <Card className="profileCard">
+        <Card elevation={0} className="profileCard">
           <CardHeader
             title={
               <>
