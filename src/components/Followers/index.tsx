@@ -5,7 +5,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import './style.css'
 
-const Followers = () => {
+const Followers: React.FC = () => {
   return (
     <>
       <Grid item container xs={12} direction="row" justify="flex-start" alignItems="center">

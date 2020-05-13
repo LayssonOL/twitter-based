@@ -5,6 +5,7 @@ import DefaultCoverPicture from './imgs/default_cover_picture.png';
 // import CoverPicture from './imgs/cover_picture.png';
 import ProfilePicture from './imgs/twitter_icon.jpg';
 import ProfileColumn from './components/Profile';
+import SuggestionsColumn from './components/Suggestions'
 import './App.css';
 
 function App() {
@@ -47,13 +48,13 @@ function App() {
         <Grid
           item
           xs={3}
+          container
           className="columnThree"
-          direction="column"
+          direction="row"
           justify="center"
-          alignContent="center"
           alignItems="center"
         >
-          <Typography>Column 3</Typography>
+          <SuggestionsColumn />
         </Grid>
       </Grid>
     </div>
