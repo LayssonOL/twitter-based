@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  height: 100%;
+  top: 0px;
+  left: 0px;
   position: absolute;
 }
 

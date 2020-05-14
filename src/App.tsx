@@ -6,6 +6,7 @@ import DefaultCoverPicture from './imgs/default_cover_picture.png';
 import ProfilePicture from './imgs/twitter_icon.jpg';
 import ProfileColumn from './components/Profile';
 import SuggestionsColumn from './components/Suggestions'
+import FeedColumn from './components/Feed'
 import './App.css';
 
 function App() {
@@ -43,7 +44,9 @@ function App() {
           alignContent="center"
           alignItems="center"
         >
-          <Typography>Column 2</Typography>
+          <Typography>
+            <FeedColumn />
+          </Typography>
         </Grid>
         <Grid
           item
